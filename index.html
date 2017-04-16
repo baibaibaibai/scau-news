@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--[if lt IE 8]><script>window.location.href="/code/error/"</script><![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>华南农业大学</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-migrate-1.2.1.js"></script>
+<script type="text/javascript" src="js/jquery.ui.js"></script>
+<script type="text/javascript" src="js/jquery.validate.js"></script>
+<script type="text/javascript" src="js/jquery.form.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="uEditor/uEditor.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/move.js"></script>
+<link rel="shortcut icon" type="image/x-icon" href="img/huanong.jpg" />
+<link rel="stylesheet" href="css/smoothness/jquery.ui.css" type="text/css" />
+<link rel="stylesheet" href="uEditor/uEditor.css" type="text/css" />
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+</head>
+<body>
+
+
+<div id="header">
+	<div class="header_main">
+        <img src="img/huanong.jpg"></img>
+		<h1>华南农业大学</h1>
+		<div class="header_button">
+			<button id="question_button">发表</button>
+		</div>
+		<div class="header_member">
+			<a href="javascript:void(0)" id="reg_a">注册</a>
+			<a href="javascript:void(0)" id="member">用户</a>
+			|
+			<a href="javascript:void(0)" id="login_a">登录</a>
+			<a href="javascript:void(0)" id="logout">退出</a>
+		</div>
+	</div>
+</div>
+
+<div id="main">
+	<div class="main_left">
+		<div id="div1">
+         <ul>
+    	    <li id="l1"></li>
+    	    <li id="l2"></li>
+    	    <li id="l3"></li>
+    	    <li id="l4"></li>
+         </ul>
+        </div>
+		<div class="content">
+			<a name="t">1</a>
+		</div>
+	</div>
+	<div class="main_right">
+		<div id="accordion">
+			<h3>学校简介</h3>
+			<div><p>华南农业大学（South China Agricultural University），建立于1909年，是所以农业科学为优势、以生命科学为特色，农、工、文、理、经、管、法、艺术七大学科全面发展。</p><p>华南农业大学是广东省和国家农业部共建的省部共建大学，国家重点建设大学，也是首批广东省“九五”和“十五”期间自主重点建设的10所省级211广东省“211工程”高校和广东高水平大学重点建设高校  、国家卓越农林人才教育培养计划改革试点高校。</p></div>
+			<h3>学校规模</h3>
+			<div><p>截止到2015年1月，学校设有23个学院部（不含民办独立珠江学院），占地面积8000余亩，本科专业94个，有教职工2900多人，全日制在校生4.2万余人，其中本科生3.8万余人，研究生4000余人，图书馆藏书793.31万余册。</p><p>2010年我校本科毕业生就业率为93.54%，研究生就业率为95.08%。建国以来，学校为社会培养高等农业教育各类学生10多万人，其中一大批校友已成为专家学者、领导干部和农业科技骨干。</p></div>
+			<h3>招生简章</h3>
+			<div>1. 普通本科招生录取工作在广东省招生委员会领导下，在各省（自治区、直辖市）招生办公室指导下进行，招办监督”的录取体制。<br/>2.2007年华南农业大学各普通本科专业全部录取英语语种考生。 <br/>3. 除表演专业认可校考成绩外，认可省考成绩；广东省外的艺术类考生，除音乐专业认可省考成绩外，必须持有校考成绩方能录取。<br/>4. 未报华南农业大学志愿者一律不予录取，所报专业已录满且填报志愿中无专业“服从”者不予录取。
+		</div>
+	</div>
+	<div id="top"><a href="#t"><img src="img/top.png"></a></div>
+</div>
+
+
+<form id="reg" title="会员注册">
+	<ol class="reg_error"></ol>
+	<p>
+		<label for="user">帐号：</label>
+		<input type="text" name="user" class="text" id="user" />
+		<span class="star">*</span>
+	</p>
+	<p>
+		<label for="pass">密码：</label>
+		<input type="password" name="pass" class="text" id="pass" />
+		<span class="star">*</span>
+	</p>
+	<p>
+		<label for="email">邮箱：</label>
+		<input type="text" name="email" class="text" id="email" />
+		<span class="star">*</span>
+	</p>
+	<p>
+		<label>性别：</label>
+		<input type="radio" name="sex" value="male" id="male" checked="checked"><label for="male">男</label></input><input type="radio" name="sex" value="female" id="female"><label for="female">女</label></input>
+	</p>
+	<p>
+		<label for="date">生日：</label>
+		<input type="text" name="birthday" readonly="readonly" class="text" id="date" />
+	</p>
+</form>
+
+<form id="login" title="会员登录">
+	<ol class="login_error"></ol>
+	<p>
+		<label for="user">帐号：</label>
+		<input type="text" name="login_user" class="text" id="login_user" />
+		<span class="star">*</span>
+	</p>
+	<p>
+		<label for="pass">密码：</label>
+		<input type="password" name="login_pass" class="text" id="login_pass" />
+		<span class="star">*</span>
+	</p>
+	<p>
+		<input type="checkbox" name="expires" id="expires" checked="checked" /><label for="expires">登录后有效期一周</label>
+	</p>
+</form>
+
+<form id="question" title="文章">
+	<p>
+		<label for="title">文章标题：</label>
+		<input type="text" name="title" style="width:390px;" class="text" id="title" />
+	</p>
+	<p>
+		<textarea class="uEditorCustom" name="content">请输入文章内容！</textarea>
+	</p>
+</form>
+
+
+<div id="loading">数据交互中...</div>
+<div id="error">请登录后操作...</div>
+
+<div id="footer">
+	白白出版社 | 614499599@qq.com
+</div>
+
+</body>
+</html>
